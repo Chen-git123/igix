@@ -1,0 +1,14 @@
+{
+  "AppCode": "JCPT",
+  "ServiceUnitCode": "CZ",
+  "BizobjectCode": "ZJ",
+  "BizobjectID": "5b0b33c8-8489-49c6-9b5d-a8d10e4d0329",
+  "ProjectNameSpace": "Inspur.GS.JCPT.CZ.ZJ.ZJ.Front",
+  "SuDeploymentPath": "apps/jcpt/cz",
+  "MetadataProjectName": "bo-ZJ-Front",
+  "MetadataPackageName": "Inspur.GS.JCPT.CZ.ZJ.ZJ.Front",
+  "SuConfigDeploymentPath": null,
+  "ProjectType": "frontend",
+  "ProjectExtendItem": [ { "codelanguage": "java" } ],
+  "PackagePrefix": "com"
+}

@@ -1,0 +1,242 @@
+{
+  "Header": {
+    "Code": "ExpertHelp_hlp",
+    "Type": "GSPViewModel",
+    "NameSpace": "Inspur.GS.JCPT.CZ.ZJ.ZJ.Front",
+    "CertId": null,
+    "Name": "专家选择帮助",
+    "FileName": "ExpertHelp_hlp.vo",
+    "BizobjectID": "5b0b33c8-8489-49c6-9b5d-a8d10e4d0329",
+    "Language": "zh-CHS",
+    "Extendable": false,
+    "NameLanguage": {
+      "zh-CHS": "专家选择帮助",
+      "en": "",
+      "zh-CHT": ""
+    },
+    "ID": "93290003-0329-4329-8329-000000000003",
+    "IsTranslating": false
+  },
+  "Refs": [
+    {
+      "DependentMetadata": {
+        "ID": "53290001-0329-4329-8329-000000000001",
+        "CertId": null,
+        "NameSpace": "Inspur.GS.JCPT.CZ.ZJ.ZJ.Back",
+        "Code": "Expert",
+        "Name": "专家信息",
+        "Type": "GSPBusinessEntity",
+        "BizobjectID": "5b0b33c8-8489-49c6-9b5d-a8d10e4d0329"
+      }
+    },
+    {
+      "DependentMetadata": {
+        "ID": "93290007-0329-4329-8329-000000000007",
+        "CertId": null,
+        "NameSpace": "Inspur.GS.JCPT.CZ.ZJ.ZJ.Front",
+        "Code": "ExpertHelp_hlp.vo",
+        "Name": "ExpertHelp_hlp.vo",
+        "Type": "ResourceMetadata",
+        "BizobjectID": "5b0b33c8-8489-49c6-9b5d-a8d10e4d0329"
+      }
+    }
+  ],
+  "Content": {
+    "ID": "93290003-0329-4329-8329-000000000003",
+    "Code": "ExpertHelp_hlp",
+    "Name": "专家选择帮助",
+    "GeneratingAssembly": "Inspur.GS.JCPT.CZ.ZJ.ZJ.Front.Vo",
+    "JavaGeneratingAssembly": "com.inspur.gs.jcpt.cz.zj.zj.front.vo",
+    "IsUseNamespaceConfig": true,
+    "IsSimplifyGen": true,
+    "MainObject": {
+      "ID": "53290002-0329-4329-8329-000000000002",
+      "Code": "Expert",
+      "Name": "专家信息",
+      "I18nResourceInfoPrefix": "Inspur.GS.JCPT.CZ.ZJ.ZJ.Back.Expert.Expert",
+      "ContainElements": [
+        {
+          "ID": "53290003-0329-4329-8329-000000000003",
+          "LabelID": "ID",
+          "Code": "ID",
+          "Name": "ID",
+          "MDataType": "String",
+          "Length": 36,
+          "IsRequire": true,
+          "EnableRtrim": true,
+          "Mapping": {
+            "MapType": "Element",
+            "TargetMetadataId": "53290001-0329-4329-8329-000000000001",
+            "TargetObjId": "53290003-0329-4329-8329-000000000003",
+            "TargetObjectId": "53290002-0329-4329-8329-000000000002",
+            "TargetElementId": "53290003-0329-4329-8329-000000000003"
+          }
+        },
+        {
+          "ID": "53290004-0329-4329-8329-000000000004",
+          "LabelID": "expert_name",
+          "Code": "expert_name",
+          "Name": "专家姓名",
+          "MDataType": "String",
+          "Length": 100,
+          "EnableRtrim": true,
+          "Mapping": {
+            "MapType": "Element",
+            "TargetMetadataId": "53290001-0329-4329-8329-000000000001",
+            "TargetObjId": "53290004-0329-4329-8329-000000000004",
+            "TargetObjectId": "53290002-0329-4329-8329-000000000002",
+            "TargetElementId": "53290004-0329-4329-8329-000000000004"
+          }
+        },
+        {
+          "ID": "53290005-0329-4329-8329-000000000005",
+          "LabelID": "expert_mobile",
+          "Code": "expert_mobile",
+          "Name": "专家手机",
+          "MDataType": "String",
+          "Length": 50,
+          "EnableRtrim": true,
+          "Mapping": {
+            "MapType": "Element",
+            "TargetMetadataId": "53290001-0329-4329-8329-000000000001",
+            "TargetObjId": "53290005-0329-4329-8329-000000000005",
+            "TargetObjectId": "53290002-0329-4329-8329-000000000002",
+            "TargetElementId": "53290005-0329-4329-8329-000000000005"
+          }
+        },
+        {
+          "ID": "53290006-0329-4329-8329-000000000006",
+          "LabelID": "expert_sex",
+          "Code": "expert_sex",
+          "Name": "专家性别",
+          "ObjectType": "Enum",
+          "MDataType": "String",
+          "Length": 36,
+          "EnableRtrim": true,
+          "EnumIndexType": 1,
+          "ContainEnumValues": [
+            {
+              "I18nResourceInfoPrefix": "Inspur.GS.JCPT.CZ.ZJ.ZJ.Back.Expert.Expert.expert_sex.男",
+              "Index": 0,
+              "IsDefaultEnum": true,
+              "StringIndex": "男",
+              "Value": "男",
+              "Name": "男"
+            },
+            {
+              "I18nResourceInfoPrefix": "Inspur.GS.JCPT.CZ.ZJ.ZJ.Back.Expert.Expert.expert_sex.女",
+              "Index": 1,
+              "IsDefaultEnum": false,
+              "StringIndex": "女",
+              "Value": "女",
+              "Name": "女"
+            }
+          ],
+          "Mapping": {
+            "MapType": "Element",
+            "TargetMetadataId": "53290001-0329-4329-8329-000000000001",
+            "TargetObjId": "53290006-0329-4329-8329-000000000006",
+            "TargetObjectId": "53290002-0329-4329-8329-000000000002",
+            "TargetElementId": "53290006-0329-4329-8329-000000000006"
+          },
+          "I18nResourceInfoPrefix": "Inspur.GS.JCPT.CZ.ZJ.ZJ.Back.Expert.Expert.expert_sex"
+        }
+      ],
+      "RefObjectName": "53290012-0329-4329-8329-000000000012",
+      "ObjectType": 1,
+      "ColumnGenerateID": {
+        "ColumnParameters": [],
+        "ElementID": "f1e400c0-f75a-497f-ab72-5163ec9cb041",
+        "GenerateType": ""
+      },
+      "BelongModelID": "53290001-0329-4329-8329-000000000001",
+      "Keys": [
+        {
+          "RefDataModelName": "",
+          "SourceElement": "e0b40a57-253a-439d-8054-c8922307b869",
+          "SourceElementDisplay": "组建专家谈判采购id",
+          "TargetElement": "cd52adf8-5c0e-45b7-b57c-7c3258022723",
+          "TargetElementDisplay": "ID"
+        }
+      ],
+      "ParentObjectID": "9a2e5333-827c-423c-9986-d8aebf9cea4a",
+      "Mapping": {
+        "MapType": "BEObject",
+        "TargetMetadataId": "e8e1357f-d238-4743-a813-654f37b056b8",
+        "TargetObjId": "202d5fd1-6971-4801-9008-54a969230d95"
+      }
+    },
+    "Variables": {
+      "ID": "0f4bc26d-f8d7-4fdc-a0b3-5bbe97b8bf02",
+      "Code": "ExpertHelpVariable",
+      "Name": "专家选择帮助变量",
+      "I18nResourceInfoPrefix": ""
+    },
+    "ConvertMsg": false,
+    "Actions": [],
+    "Mapping": {
+      "MapType": "BizEntity",
+      "TargetMetadataId": "53290001-0329-4329-8329-000000000001",
+      "TargetObjId": "53290001-0329-4329-8329-000000000001"
+    },
+    "ValueHelpConfigs": [],
+    "ExtendProperties": {},
+    "DataExtendInfo": {
+      "DataMappingActions": [],
+      "BeforeQueryActions": [],
+      "QueryActions": [],
+      "AfterQueryActions": [],
+      "BeforeRetrieveActions": [],
+      "RetrieveActions": [],
+      "AfterRetrieveActions": [],
+      "BeforeModifyActions": [],
+      "ModifyActions": [],
+      "AfterModifyActions": [],
+      "ChangesetMappingActions": [],
+      "BeforeCreateActions": [],
+      "CreateActions": [],
+      "AfterCreateActions": [
+        {
+          "ID": "43cbc2a7-877c-4252-8e80-6d84427372a7",
+          "Code": "CreateDataAfterEvent",
+          "Name": "新增数据后事件",
+          "ComponentName": "ExpertForm_frmCreateDataAfterEventVOActionController",
+          "Type": "VMAction",
+          "ReturnValue": {
+            "ID": "",
+            "ParameterType": "Custom",
+            "Assembly": "mscorlib.dll",
+            "JavaClassName": "void",
+            "ClassName": "Void",
+            "Mode": "OUT",
+            "ParamActualValue": {
+              "Enable": false,
+              "HasValue": false,
+              "Value": "",
+              "ValueType": "Constant"
+            },
+            "IsVoidReturnType": true
+          },
+          "ComponentEntityId": "47165489-5626-4771-8f8c-8e72754343d4"
+        }
+      ],
+      "BeforeDeleteActions": [],
+      "DeleteActions": [],
+      "AfterDeleteActions": [],
+      "BeforeSaveActions": [],
+      "DataReversalMappingActions": [],
+      "AfterSaveActions": [],
+      "ChangesetReversalMappingActions": [],
+      "BeforeMultiDeleteActions": [],
+      "MultiDeleteActions": [],
+      "AfterMultiDeleteActions": []
+    }
+  },
+  "ExtendRule": null,
+  "RelativePath": "JCPT/CZ/ZJ/bo-zj-front/metadata/lookups",
+  "ExtendProperty": "",
+  "Extended": false,
+  "PreviousVersion": null,
+  "Version": null,
+  "Properties": null
+}

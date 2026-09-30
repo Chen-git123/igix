@@ -1,0 +1,28 @@
+{
+  "id": "53290012-0329-4329-8329-000000000012",
+  "code": "ei_expert",
+  "name": "专家信息",
+  "typeStr": "Table",
+  "version": "53290017-0329-4329-8329-000000000017",
+  "description": "",
+  "columns": [
+    { "id": "53290013-0329-4329-8329-000000000013", "code": "id", "name": "id", "typeStr": "Column", "version": null, "description": "", "length": 36, "precision": 0, "scale": 0, "defaultValue": "", "srid": 0, "geometryType": null, "ucName": null, "dataType": "Varchar", "dataTypeStr": "Varchar", "Type": "Column", "ifPrimaryKey": true, "isNullable": false, "isUnique": true },
+    { "id": "53290014-0329-4329-8329-000000000014", "code": "expert_name", "name": "专家姓名", "typeStr": "Column", "version": null, "description": "", "length": 100, "precision": 0, "scale": 0, "defaultValue": null, "srid": 0, "geometryType": null, "ucName": null, "dataType": "Varchar", "dataTypeStr": "Varchar", "Type": "Column", "ifPrimaryKey": false, "isNullable": false, "isUnique": false },
+    { "id": "53290015-0329-4329-8329-000000000015", "code": "expert_mobile", "name": "专家手机", "typeStr": "Column", "version": null, "description": "", "length": 50, "precision": 0, "scale": 0, "defaultValue": null, "srid": 0, "geometryType": null, "ucName": null, "dataType": "Varchar", "dataTypeStr": "Varchar", "Type": "Column", "ifPrimaryKey": false, "isNullable": true, "isUnique": false },
+    { "id": "53290016-0329-4329-8329-000000000016", "code": "expert_sex", "name": "专家性别", "typeStr": "Column", "version": null, "description": "", "length": 36, "precision": 0, "scale": 0, "defaultValue": null, "srid": 0, "geometryType": null, "ucName": null, "dataType": "Varchar", "dataTypeStr": "Varchar", "Type": "Column", "ifPrimaryKey": false, "isNullable": true, "isUnique": false }
+  ],
+  "businessObjectId": "5b0b33c8-8489-49c6-9b5d-a8d10e4d0329",
+  "pkName": "",
+  "primaryKey": [ "53290013-0329-4329-8329-000000000013" ],
+  "indexes": [],
+  "multiLanguageColumns": [],
+  "tenantIdentityColumn": null,
+  "dboTableNameRule": { "id": "", "code": "", "name": "", "dimensionStrategyWithOrder": [], "IsSynStructure": false },
+  "hasNameRule": false,
+  "Type": "Table",
+  "isI18nObject": false,
+  "isFiscalTable": false,
+  "isSynHis": false,
+  "isDelRecordTable": false,
+  "isUsingTimeStamp": false
+}

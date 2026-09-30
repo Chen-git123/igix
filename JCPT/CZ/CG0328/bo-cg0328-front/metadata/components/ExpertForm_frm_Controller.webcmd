@@ -1,0 +1,218 @@
+{
+  "Header": {
+    "Code": "ExpertForm_frm_Controller",
+    "Type": "WebCommand",
+    "NameSpace": "Inspur.GS.JCPT.CZ.CG0328.CG0328.Front",
+    "CertId": null,
+    "Name": "组建专家表单_frm_Controller",
+    "FileName": "ExpertForm_frm_Controller.webcmd",
+    "BizobjectID": "a9cd6d33-840f-9e35-33b5-24053634c877",
+    "Language": null,
+    "Extendable": false,
+    "NameLanguage": {
+      "zh-CHS": "组建专家表单_frm_Controller",
+      "en": "",
+      "zh-CHT": ""
+    },
+    "ID": "80e1525a-c9fe-4883-8a4d-b4c5b72200a1",
+    "IsTranslating": false
+  },
+  "Refs": [
+    {
+      "DependentMetadata": {
+        "ID": "ac0e9753-b0b8-454e-a2cf-1360604d1fdd",
+        "CertId": null,
+        "NameSpace": "Inspur.GS.JCPT.CZ.CG0328.CG0328.Front",
+        "Code": "ExpertForm_frm_Controller.webcmd",
+        "Name": "ExpertForm_frm_Controller.webcmd",
+        "Type": "ResourceMetadata",
+        "BizobjectID": "a9cd6d33-840f-9e35-33b5-24053634c877"
+      }
+    }
+  ],
+  "Content": {
+    "application": null,
+    "serviceUnit": null,
+    "version": null,
+    "Code": "ExpertForm_frm_Controller",
+    "Name": "组建专家表单_frm_Controller",
+    "Id": "80e1525a-c9fe-4883-8a4d-b4c5b72200a1",
+    "Description": null,
+    "Commands": [
+      {
+        "dict": null,
+        "uri": null,
+        "kind": "DefaultOperation",
+        "extensionKeys": null,
+        "Code": "personnameLookupPicked",
+        "Name": "用户名帮助后事件",
+        "Description": "",
+        "Id": "e4a69c0f-c52d-4ea5-8ee8-11bf57a180a6",
+        "Items": [
+          {
+            "itemType": 0,
+            "itemCode": "personnameLookupPicked",
+            "itemName": "用户名帮助后事件",
+            "itemId": "9ddc89ff-4cae-4d90-962f-4ec81bd39d8epersonnameLookupPicked",
+            "Id": "a8ce33e3-0eb4-44a4-a016-c01ee41234f2",
+            "Code": "personnameLookupPicked",
+            "Name": "personnameLookupPicked",
+            "ComponentId": "b307fd4c-af6a-4dda-973e-70e2f3154e35",
+            "ComponentCode": "ExpertForm_frm_Controller",
+            "ComponentName": "组建专家表单_frm_Controller",
+            "ComponentPath": "JCPT/CZ/CG0328/bo-cg0328-front/metadata/components",
+            "MethodId": "9ddc89ff-4cae-4d90-962f-4ec81bd39d8e",
+            "MethodCode": "personnameLookupPicked",
+            "MethodName": "用户名帮助后事件",
+            "IsReplaced": false,
+            "IsBeforeExpansion": false,
+            "IsAfterExpansion": false,
+            "ParamConfigs": [],
+            "Type": 0,
+            "Content": {
+              "itemType": 0,
+              "itemCode": "personnameLookupPicked",
+              "itemName": "用户名帮助后事件",
+              "itemId": "9ddc89ff-4cae-4d90-962f-4ec81bd39d8epersonnameLookupPicked",
+              "Id": "a8ce33e3-0eb4-44a4-a016-c01ee41234f2",
+              "Code": "personnameLookupPicked",
+              "Name": "personnameLookupPicked",
+              "ComponentId": "b307fd4c-af6a-4dda-973e-70e2f3154e35",
+              "ComponentCode": "ExpertForm_frm_Controller",
+              "ComponentName": "组建专家表单_frm_Controller",
+              "ComponentPath": "JCPT/CZ/CG0328/bo-cg0328-front/metadata/components",
+              "MethodId": "9ddc89ff-4cae-4d90-962f-4ec81bd39d8e",
+              "MethodCode": "personnameLookupPicked",
+              "MethodName": "用户名帮助后事件",
+              "IsReplaced": false,
+              "IsBeforeExpansion": false,
+              "IsAfterExpansion": false,
+              "ParamConfigs": []
+            }
+          }
+        ],
+        "Parameters": []
+      },
+      {
+        "dict": null,
+        "uri": null,
+        "kind": "DefaultOperation",
+        "extensionKeys": null,
+        "Code": "expertmobileFieldValueChanged",
+        "Name": "专家手机绑定字段值变化后事件",
+        "Description": "",
+        "Id": "6c053825-8bbf-4a6a-a846-5f0bdfc351bd",
+        "Items": [
+          {
+            "itemType": 0,
+            "itemCode": "expertmobileFieldValueChanged",
+            "itemName": "专家手机绑定字段值变化后事件",
+            "itemId": "311eecf7-2a07-49b1-b176-1513c35ff5ebexpertmobileFieldValueChanged",
+            "Id": "8bbcae61-a7ce-470b-9088-60128d76e666",
+            "Code": "expertmobileFieldValueChanged",
+            "Name": "expertmobileFieldValueChanged",
+            "ComponentId": "b307fd4c-af6a-4dda-973e-70e2f3154e35",
+            "ComponentCode": "ExpertForm_frm_Controller",
+            "ComponentName": "组建专家表单_frm_Controller",
+            "ComponentPath": "JCPT/CZ/CG0328/bo-cg0328-front/metadata/components",
+            "MethodId": "311eecf7-2a07-49b1-b176-1513c35ff5eb",
+            "MethodCode": "expertmobileFieldValueChanged",
+            "MethodName": "专家手机绑定字段值变化后事件",
+            "IsReplaced": false,
+            "IsBeforeExpansion": false,
+            "IsAfterExpansion": false,
+            "ParamConfigs": [],
+            "Type": 0,
+            "Content": {
+              "itemType": 0,
+              "itemCode": "expertmobileFieldValueChanged",
+              "itemName": "专家手机绑定字段值变化后事件",
+              "itemId": "311eecf7-2a07-49b1-b176-1513c35ff5ebexpertmobileFieldValueChanged",
+              "Id": "8bbcae61-a7ce-470b-9088-60128d76e666",
+              "Code": "expertmobileFieldValueChanged",
+              "Name": "expertmobileFieldValueChanged",
+              "ComponentId": "b307fd4c-af6a-4dda-973e-70e2f3154e35",
+              "ComponentCode": "ExpertForm_frm_Controller",
+              "ComponentName": "组建专家表单_frm_Controller",
+              "ComponentPath": "JCPT/CZ/CG0328/bo-cg0328-front/metadata/components",
+              "MethodId": "311eecf7-2a07-49b1-b176-1513c35ff5eb",
+              "MethodCode": "expertmobileFieldValueChanged",
+              "MethodName": "专家手机绑定字段值变化后事件",
+              "IsReplaced": false,
+              "IsBeforeExpansion": false,
+              "IsAfterExpansion": false,
+              "ParamConfigs": []
+            }
+          }
+        ],
+        "Parameters": []
+      },
+      {
+        "dict": null,
+        "uri": null,
+        "kind": "DefaultOperation",
+        "extensionKeys": null,
+        "Code": "expertCatalogLookupPicked",
+        "Name": "专家多选帮助后事件",
+        "Description": "",
+        "Id": "750d4250-201f-4eed-b0e6-c82d617866d2",
+        "Items": [
+          {
+            "itemType": 0,
+            "itemCode": "expertCatalogLookupPicked",
+            "itemName": "专家多选帮助后事件",
+            "itemId": "93280001-0328-4328-8328-000000000001expertCatalogLookupPicked",
+            "Id": "1ec44f66-99e6-42d8-9585-2306eabd1d41",
+            "Code": "expertCatalogLookupPicked",
+            "Name": "expertCatalogLookupPicked",
+            "ComponentId": "b307fd4c-af6a-4dda-973e-70e2f3154e35",
+            "ComponentCode": "ExpertForm_frm_Controller",
+            "ComponentName": "组建专家表单_frm_Controller",
+            "ComponentPath": "JCPT/CZ/CG0328/bo-cg0328-front/metadata/components",
+            "MethodId": "93280003-0328-4328-8328-000000000003",
+            "MethodCode": "expertCatalogLookupPicked",
+            "MethodName": "专家多选帮助后事件",
+            "IsReplaced": false,
+            "IsBeforeExpansion": false,
+            "IsAfterExpansion": false,
+            "ParamConfigs": [],
+            "Type": 0,
+            "Content": {
+              "itemType": 0,
+              "itemCode": "expertCatalogLookupPicked",
+              "itemName": "专家多选帮助后事件",
+              "itemId": "93280001-0328-4328-8328-000000000001expertCatalogLookupPicked",
+              "Id": "1ec44f66-99e6-42d8-9585-2306eabd1d41",
+              "Code": "expertCatalogLookupPicked",
+              "Name": "expertCatalogLookupPicked",
+              "ComponentId": "b307fd4c-af6a-4dda-973e-70e2f3154e35",
+              "ComponentCode": "ExpertForm_frm_Controller",
+              "ComponentName": "组建专家表单_frm_Controller",
+              "ComponentPath": "JCPT/CZ/CG0328/bo-cg0328-front/metadata/components",
+              "MethodId": "93280003-0328-4328-8328-000000000003",
+              "MethodCode": "expertCatalogLookupPicked",
+              "MethodName": "专家多选帮助后事件",
+              "IsReplaced": false,
+              "IsBeforeExpansion": false,
+              "IsAfterExpansion": false,
+              "ParamConfigs": [],
+              "Type": 0
+            }
+          }
+        ],
+        "Parameters": []
+      }
+    ],
+    "Extends": {
+      "FormCode": "ExpertForm",
+      "IsCommon": false
+    }
+  },
+  "ExtendRule": null,
+  "RelativePath": "JCPT/CZ/CG0328/bo-cg0328-front/metadata/components",
+  "ExtendProperty": "{\"IsCommon\":false,\"FormCode\":\"ExpertForm\"}",
+  "Extended": false,
+  "PreviousVersion": null,
+  "Version": null,
+  "Properties": null
+}
