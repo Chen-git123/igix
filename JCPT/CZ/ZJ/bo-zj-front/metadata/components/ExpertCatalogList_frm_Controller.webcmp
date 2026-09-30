@@ -1,0 +1,105 @@
+{
+  "Header" : {
+    "Code" : "ExpertCatalogList_frm_Controller",
+    "Type" : "WebComponent",
+    "NameSpace" : "Inspur.GS.JCPT.CZ.ZJ.ZJ.Front",
+    "CertId" : null,
+    "Name" : "专家信息列表_frm_Controller",
+    "FileName" : "ExpertCatalogList_frm_Controller.webcmp",
+    "BizobjectID" : "a9cd6d33-840f-9e35-33b5-24053634c877",
+    "Language" : null,
+    "Extendable" : false,
+    "NameLanguage" : {
+      "zh-CHS" : "专家信息列表_frm_Controller",
+      "en" : "",
+      "zh-CHT" : ""
+    },
+    "ID" : "32a74ed8-b57e-4ebf-bf65-6c254a964426",
+    "IsTranslating" : false
+  },
+  "Refs" : [ {
+    "DependentMetadata" : {
+      "ID" : "1bfe6804-d9a0-492b-897f-7afd6424bb79",
+      "CertId" : null,
+      "NameSpace" : "Inspur.GS.JCPT.CZ.ZJ.ZJ.Front",
+      "Code" : "ExpertCatalogList_frm_Controller.webcmp",
+      "Name" : "ExpertCatalogList_frm_Controller.webcmp",
+      "Type" : "ResourceMetadata",
+      "BizobjectID" : "a9cd6d33-840f-9e35-33b5-24053634c877"
+    }
+  } ],
+  "Content" : {
+    "name" : "专家信息列表_frm_Controller",
+    "application" : null,
+    "serviceUnit" : null,
+    "version" : null,
+    "refStructures" : [ ],
+    "resource" : {
+      "sourceFile" : "JCPT/CZ/ZJ/bo-zj-front/metadata/components/ExpertCatalogList_frm_Controller.ts",
+      "className" : "ExpertCatalogListFrmControllerService",
+      "kind" : "TypeScriptClass"
+    },
+    "Code" : "ExpertCatalogList_frm_Controller",
+    "Id" : "32a74ed8-b57e-4ebf-bf65-6c254a964426",
+    "Description" : null,
+    "Operations" : [ {
+      "dict" : null,
+      "uri" : null,
+      "returnType" : null,
+      "kind" : "DefaultOperation",
+      "extensionKeys" : null,
+      "Code" : "syncData",
+      "Name" : "同步数据",
+      "Description" : "",
+      "Id" : "b71b0a5d-1db6-4a31-a508-3ddda01ce14f",
+      "Parameters" : [ {
+        "dict" : null,
+        "required" : null,
+        "defaultValue" : null,
+        "constraint" : null,
+        "kind" : "DefaultParameter",
+        "controlType" : null,
+        "customControlSource" : null,
+        "helpInfo" : null,
+        "paramConstraint" : null,
+        "enumCollection" : [ ],
+        "extensionKeys" : null,
+        "Code" : "dataId",
+        "Name" : "主表主键",
+        "Description" : "",
+        "ParameterType" : "string",
+        "Id" : "3e5e8b0e-ee5f-4c2a-bb81-60174d8a902f",
+        "IsRetVal" : false
+      }, {
+        "dict" : null,
+        "required" : null,
+        "defaultValue" : null,
+        "constraint" : null,
+        "kind" : "DefaultParameter",
+        "controlType" : null,
+        "customControlSource" : null,
+        "helpInfo" : null,
+        "paramConstraint" : null,
+        "enumCollection" : [ ],
+        "extensionKeys" : null,
+        "Code" : "returnValue",
+        "Name" : "returnValue",
+        "Description" : "",
+        "ParameterType" : "any",
+        "Id" : "698a4e2d-3a0d-4064-ba8e-c3ee9b0c8e0c",
+        "IsRetVal" : true
+      } ]
+    } ],
+    "IsCommon" : false,
+    "ClassName" : "ExpertCatalogListFrmControllerService",
+    "FormCode" : "ExpertCatalogList",
+    "Source" : "JCPT/CZ/ZJ/bo-zj-front/metadata/components/ExpertCatalogList_frm_Controller.ts"
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "JCPT/CZ/ZJ/bo-zj-front/metadata/components",
+  "ExtendProperty" : "{\"IsCommon\":false,\"FormCode\":\"ExpertCatalogList\",\"sourceCode\":\"import { Injectable } from '@angular/core';\\r\\n\\r\\nimport { StateMachineService } from \\\"@farris/command-services\\\";\\r\\n\\r\\nimport { FrameContext, Repository, AppContext, BindingData, BindingList } from '@farris/devkit';\\r\\nimport { BefRepository, ResponseInfo } from '@farris/bef';\\r\\nimport { BeActionService, FormMessageService, FormNotifyService, CommandService, FormLoadingService, NavigationService } from '@farris/command-services';\\r\\nimport { tap, map, switchMap } from 'rxjs/operators';\\r\\nimport { EMPTY, of } from 'rxjs';\\r\\n\\r\\n@Injectable()\\r\\nexport class ExpertCatalogListFrmControllerService {\\r\\n  constructor(\\r\\n    private appContext: AppContext,\\r\\n    private bindingData: BindingData,\\r\\n    private frameContext: FrameContext,\\r\\n    private beActionService: BeActionService,\\r\\n    private navigationService: NavigationService,\\r\\n    private messageService: FormMessageService,\\r\\n    private stateMachineService: StateMachineService,\\r\\n    private formNotifyService: FormNotifyService,\\r\\n    private commandService: CommandService,\\r\\n    private loadingService: FormLoadingService\\r\\n  ) { }\\r\\n\\r\\n  /**\\r\\n   * 同步数据\\r\\n   * @remarks \\r\\n   * @param dataId 主表主键\\r\\n   * @returns \\r\\n   */\\r\\n  syncData(dataId: string): any {\\r\\n    const repository = this.frameContext.repository as BefRepository<any>;\\r\\n    const requestInfo = repository.restService.buildRequestInfo();\\r\\n    const actionUri = 'syncdata';\\r\\n    const body = {\\r\\n      dataId: dataId,\\r\\n      requestInfo: requestInfo\\r\\n    }\\r\\n    const action$ = this.beActionService.invokeAction(actionUri, 'PUT', null, null, body);\\r\\n    return action$.pipe(\\r\\n      tap((responseInfo: ResponseInfo) => {\\r\\n        this.formNotifyService.success(\\\"成功!\\\");\\r\\n      })\\r\\n    )\\r\\n  }\\r\\n}\\r\\n\"}",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

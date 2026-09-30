@@ -1,0 +1,226 @@
+{
+  "Header": {
+    "Code": "ExpertCatalogForm_frm",
+    "Type": "StateMachine",
+    "NameSpace": "Inspur.GS.JCPT.CZ.ZJ.ZJ.Front",
+    "CertId": null,
+    "Name": "专家信息表单",
+    "FileName": "ExpertCatalogForm_frm.sm",
+    "BizobjectID": "5b0b33c8-8489-49c6-9b5d-a8d10e4d0329",
+    "Language": null,
+    "Extendable": false,
+    "NameLanguage": {
+      "zh-CHS": "专家信息表单",
+      "en": "",
+      "zh-CHT": ""
+    },
+    "ID": "bf25a93d-791c-4b1f-9bf9-3d83bdb7f781",
+    "IsTranslating": false
+  },
+  "Refs": [],
+  "Content": {
+    "code": null,
+    "name": null,
+    "renderState": {
+      "canRemove": {
+        "condition": [
+          {
+            "lBracket": "",
+            "source": "state",
+            "compare": "===",
+            "target": "'init'",
+            "relation": "",
+            "rBracket": ""
+          }
+        ],
+        "name": "删除",
+        "description": ""
+      },
+      "editable": {
+        "condition": [
+          {
+            "lBracket": "",
+            "source": "state",
+            "compare": "===",
+            "target": "'add'",
+            "relation": "or",
+            "rBracket": ""
+          },
+          {
+            "lBracket": "",
+            "source": "state",
+            "compare": "===",
+            "target": "'edit'",
+            "relation": "",
+            "rBracket": ""
+          }
+        ],
+        "name": "可编辑",
+        "description": ""
+      },
+      "canEdit": {
+        "condition": [
+          {
+            "lBracket": "",
+            "source": "state",
+            "compare": "===",
+            "target": "'init'",
+            "relation": "",
+            "rBracket": ""
+          }
+        ],
+        "name": "编辑",
+        "description": ""
+      },
+      "canRemoveDetail": {
+        "condition": [
+          {
+            "lBracket": "",
+            "source": "state",
+            "compare": "===",
+            "target": "'add'",
+            "relation": "or",
+            "rBracket": ""
+          },
+          {
+            "lBracket": "",
+            "source": "state",
+            "compare": "===",
+            "target": "'edit'",
+            "relation": "",
+            "rBracket": ""
+          }
+        ],
+        "name": "删除明细",
+        "description": ""
+      },
+      "canAdd": {
+        "condition": [
+          {
+            "lBracket": "",
+            "source": "state",
+            "compare": "===",
+            "target": "'init'",
+            "relation": "",
+            "rBracket": ""
+          }
+        ],
+        "name": "新增",
+        "description": ""
+      },
+      "canSave": {
+        "condition": [
+          {
+            "lBracket": "",
+            "source": "state",
+            "compare": "===",
+            "target": "'add'",
+            "relation": "or",
+            "rBracket": ""
+          },
+          {
+            "lBracket": "",
+            "source": "state",
+            "compare": "===",
+            "target": "'edit'",
+            "relation": "",
+            "rBracket": ""
+          }
+        ],
+        "name": "保存",
+        "description": ""
+      },
+      "canCancel": {
+        "condition": [
+          {
+            "lBracket": "",
+            "source": "state",
+            "compare": "===",
+            "target": "'add'",
+            "relation": "or",
+            "rBracket": ""
+          },
+          {
+            "lBracket": "",
+            "source": "state",
+            "compare": "===",
+            "target": "'edit'",
+            "relation": "",
+            "rBracket": ""
+          }
+        ],
+        "name": "取消",
+        "description": ""
+      },
+      "canAddDetail": {
+        "condition": [
+          {
+            "lBracket": "",
+            "source": "state",
+            "compare": "===",
+            "target": "'add'",
+            "relation": "or",
+            "rBracket": ""
+          },
+          {
+            "lBracket": "",
+            "source": "state",
+            "compare": "===",
+            "target": "'edit'",
+            "relation": "",
+            "rBracket": ""
+          }
+        ],
+        "name": "新增明细",
+        "description": ""
+      }
+    },
+    "state": [
+      {
+        "state": "add",
+        "name": "新增",
+        "description": "处于新增状态"
+      },
+      {
+        "state": "init",
+        "name": "初始",
+        "description": "处于初始状态"
+      },
+      {
+        "state": "edit",
+        "name": "编辑",
+        "description": "处于编辑状态"
+      }
+    ],
+    "initialState": "init",
+    "action": {
+      "Cancel": {
+        "name": "取消",
+        "transitTo": "init",
+        "description": "取消并切换至初始状态"
+      },
+      "Create": {
+        "name": "创建",
+        "transitTo": "add",
+        "description": "新建并切换至新增状态"
+      },
+      "Edit": {
+        "name": "编辑",
+        "transitTo": "edit",
+        "description": "编辑并切换至编辑状态"
+      },
+      "Save": {
+        "name": "保存",
+        "transitTo": "init",
+        "description": "保存并切换至初始状态"
+      }
+    }
+  },
+  "ExtendRule": null,
+  "RelativePath": "JCPT/CZ/ZJ/bo-zj-front/metadata/components",
+  "ExtendProperty": "",
+  "Extended": false,
+  "PreviousVersion": null,
+  "Version": null,
+  "Properties": null
+}

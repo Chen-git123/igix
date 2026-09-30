@@ -1,0 +1,9 @@
+{
+  "NameSpace": "Inspur.GS.JCPT.CZ.ZJ.ZJ.Back",
+  "Name": "bo-ZJ-Back",
+  "ProjectFileName": null,
+  "ProjectPath": null,
+  "MetadataPackageInfo": { "Name": "Inspur.GS.JCPT.CZ.ZJ.ZJ.Back", "Version": { "VersionInt": null, "VersionString": "1.0.0" }, "Location": null, "ProcessMode": "interpretation" },
+  "MetadataPackageRefs": [], "ProjectRefs": null, "ExternalRefs": null, "MdpkgRefs": null, "MavenPackageRefs": [], "CsprojAssemblyName": null,
+  "ID": "53290009-0329-4329-8329-000000000009"
+}

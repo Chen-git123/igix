@@ -1,0 +1,709 @@
+{
+  "Header": {
+    "Code": "ExpertForm_frm",
+    "Type": "GSPViewModel",
+    "NameSpace": "Inspur.GS.JCPT.CZ.CG0328.CG0328.Front",
+    "CertId": null,
+    "Name": "组建专家表单",
+    "FileName": "ExpertForm_frm.vo",
+    "BizobjectID": "a9cd6d33-840f-9e35-33b5-24053634c877",
+    "Language": "zh-CHS",
+    "Extendable": false,
+    "NameLanguage": {
+      "zh-CHS": "组建专家表单",
+      "en": "",
+      "zh-CHT": ""
+    },
+    "ID": "7d0abe5a-320d-4ef5-bc60-19eee45fe22e",
+    "IsTranslating": false
+  },
+  "Refs": [
+    {
+      "DependentMetadata": {
+        "ID": "be410198-c684-4bda-b6c7-7cd7a6237226",
+        "CertId": null,
+        "NameSpace": "Inspur.GS.JCPT.CZ.CG0328.CG0328.Front",
+        "Code": "ExpertForm_frmUpdateCompCodeVOActionController",
+        "Name": "ExpertForm_frmUpdateCompCodeVOActionController",
+        "Type": "VMComponent",
+        "BizobjectID": "a9cd6d33-840f-9e35-33b5-24053634c877"
+      }
+    },
+    {
+      "DependentMetadata": {
+        "ID": "47165489-5626-4771-8f8c-8e72754343d4",
+        "CertId": null,
+        "NameSpace": "Inspur.GS.JCPT.CZ.CG0328.CG0328.Front",
+        "Code": "ExpertForm_frmCreateDataAfterEventVOActionController",
+        "Name": "ExpertForm_frmCreateDataAfterEventVOActionController",
+        "Type": "VMComponent",
+        "BizobjectID": "a9cd6d33-840f-9e35-33b5-24053634c877"
+      }
+    },
+    {
+      "DependentMetadata": {
+        "ID": "22235117-1759-4a32-adb3-117be86ebfec",
+        "CertId": null,
+        "NameSpace": "Inspur.GS.JCPT.CZ.CG0306.CG0306.Front",
+        "Code": "HLHTQryInquiryLookup",
+        "Name": "询价书待揭示帮助",
+        "Type": "HelpMetadata",
+        "BizobjectID": "4fe585de-89a5-ae58-aaa9-77d47edd35a6"
+      }
+    },
+    {
+      "DependentMetadata": {
+        "ID": "e8e1357f-d238-4743-a813-654f37b056b8",
+        "CertId": null,
+        "NameSpace": "Inspur.GS.JCPT.CZ.CG0328.CG0328.Back",
+        "Code": "HLHTExpertFormation",
+        "Name": "组建专家谈判采购发布",
+        "Type": "GSPBusinessEntity",
+        "BizobjectID": "a9cd6d33-840f-9e35-33b5-24053634c877"
+      }
+    },
+    {
+      "DependentMetadata": {
+        "ID": "5a9d345f-2dbd-4786-9c87-61e6ac5304bb",
+        "CertId": null,
+        "NameSpace": "Inspur.GS.JCPT.CZ.CG0328.CG0328.Front",
+        "Code": "ExpertForm_frm.vo",
+        "Name": "ExpertForm_frm.vo",
+        "Type": "ResourceMetadata",
+        "BizobjectID": "a9cd6d33-840f-9e35-33b5-24053634c877"
+      }
+    }
+  ],
+  "Content": {
+    "ID": "7d0abe5a-320d-4ef5-bc60-19eee45fe22e",
+    "Code": "ExpertForm_frm",
+    "Name": "组建专家表单_frm",
+    "GeneratingAssembly": "Inspur.GS.JCPT.CZ.CG0328.CG0328.Front.Vo",
+    "JavaGeneratingAssembly": "com.inspur.gs.jcpt.cz.cg0328.cg0328.front.vo",
+    "IsUseNamespaceConfig": true,
+    "IsSimplifyGen": true,
+    "MainObject": {
+      "ID": "9a2e5333-827c-423c-9986-d8aebf9cea4a",
+      "Code": "HLHTExpertFormation",
+      "Name": "组建专家谈判采购发布",
+      "I18nResourceInfoPrefix": "Inspur.GS.JCPT.CZ.CG0328.CG0328.Front.Vo.ExpertForm_frm.HLHTExpertFormation",
+      "ContainElements": [
+        {
+          "ID": "cd52adf8-5c0e-45b7-b57c-7c3258022723",
+          "LabelID": "ID",
+          "ChildAssociations": [],
+          "Code": "ID",
+          "Name": "ID",
+          "MDataType": "String",
+          "Length": 36,
+          "IsRequire": true,
+          "EnableRtrim": true,
+          "Mapping": {
+            "MapType": "Element",
+            "TargetMetadataId": "e8e1357f-d238-4743-a813-654f37b056b8",
+            "TargetObjId": "1963dfdd-e04a-4fcf-93e8-6f5e09f453e0",
+            "TargetObjectId": "6b20afc0-7b17-4f09-a1b0-1d2a5e4f3248",
+            "TargetElementId": "1963dfdd-e04a-4fcf-93e8-6f5e09f453e0"
+          }
+        },
+        {
+          "ID": "51b82384-dbe3-47cb-b2bd-f8b40039ab2f",
+          "LabelID": "Version",
+          "ChildAssociations": [],
+          "Code": "Version",
+          "Name": "版本",
+          "MDataType": "DateTime",
+          "EnableRtrim": true,
+          "Mapping": {
+            "MapType": "Element",
+            "TargetMetadataId": "e8e1357f-d238-4743-a813-654f37b056b8",
+            "TargetObjId": "dc0256ac-5b80-40b4-a818-6c629c2bc5ae",
+            "TargetObjectId": "6b20afc0-7b17-4f09-a1b0-1d2a5e4f3248",
+            "TargetElementId": "dc0256ac-5b80-40b4-a818-6c629c2bc5ae"
+          }
+        },
+        {
+          "ID": "32e1e25d-ae47-425d-a310-f196fda89bc6",
+          "LabelID": "plan_code",
+          "ChildAssociations": [],
+          "Code": "plan_code",
+          "Name": "电商平台采购方案id",
+          "MDataType": "String",
+          "Length": 36,
+          "EnableRtrim": true,
+          "Mapping": {
+            "MapType": "Element",
+            "TargetMetadataId": "e8e1357f-d238-4743-a813-654f37b056b8",
+            "TargetObjId": "89894026-c63c-4213-bb3e-e9035241405f",
+            "TargetObjectId": "6b20afc0-7b17-4f09-a1b0-1d2a5e4f3248",
+            "TargetElementId": "89894026-c63c-4213-bb3e-e9035241405f"
+          }
+        },
+        {
+          "ID": "548dce86-2ddc-4186-a304-d0b82acd8a05",
+          "LabelID": "user_name",
+          "ChildAssociations": [],
+          "Code": "user_name",
+          "Name": "采购方账号的用户名",
+          "MDataType": "String",
+          "Length": 50,
+          "EnableRtrim": true,
+          "Mapping": {
+            "MapType": "Element",
+            "TargetMetadataId": "e8e1357f-d238-4743-a813-654f37b056b8",
+            "TargetObjId": "69adf4bc-6358-4223-b91d-b123bb61f5cd",
+            "TargetObjectId": "6b20afc0-7b17-4f09-a1b0-1d2a5e4f3248",
+            "TargetElementId": "69adf4bc-6358-4223-b91d-b123bb61f5cd"
+          }
+        },
+        {
+          "ID": "c4c24d12-6f04-438d-b641-415c6260dcbb",
+          "LabelID": "sync_time",
+          "ChildAssociations": [],
+          "Code": "sync_time",
+          "Name": "同步时间",
+          "MDataType": "DateTime",
+          "EnableRtrim": true,
+          "Mapping": {
+            "MapType": "Element",
+            "TargetMetadataId": "e8e1357f-d238-4743-a813-654f37b056b8",
+            "TargetObjId": "814d08fb-edac-4529-8b40-96d56eb439ed",
+            "TargetObjectId": "6b20afc0-7b17-4f09-a1b0-1d2a5e4f3248",
+            "TargetElementId": "814d08fb-edac-4529-8b40-96d56eb439ed"
+          }
+        },
+        {
+          "ID": "c4a3b21b-0ce9-46c7-bd20-38e34e0f8c57",
+          "LabelID": "sync_status",
+          "ChildAssociations": [],
+          "Code": "sync_status",
+          "Name": "同步状态",
+          "ObjectType": "Enum",
+          "MDataType": "String",
+          "Length": 36,
+          "EnableRtrim": true,
+          "EnumIndexType": 1,
+          "ContainEnumValues": [
+            {
+              "I18nResourceInfoPrefix": "Inspur.GS.JCPT.CZ.CG0328.CG0328.Front.Vo.ExpertForm_frm.HLHTExpertFormation.sync_status.DRAFTED",
+              "Index": 0,
+              "IsDefaultEnum": true,
+              "StringIndex": "DRAFTED",
+              "Value": "DRAFTED",
+              "Name": "草稿"
+            },
+            {
+              "I18nResourceInfoPrefix": "Inspur.GS.JCPT.CZ.CG0328.CG0328.Front.Vo.ExpertForm_frm.HLHTExpertFormation.sync_status.SYNCING",
+              "Index": 1,
+              "IsDefaultEnum": false,
+              "StringIndex": "SYNCING",
+              "Value": "SYNCING",
+              "Name": "同步中"
+            },
+            {
+              "I18nResourceInfoPrefix": "Inspur.GS.JCPT.CZ.CG0328.CG0328.Front.Vo.ExpertForm_frm.HLHTExpertFormation.sync_status.SYNCED",
+              "Index": 2,
+              "IsDefaultEnum": false,
+              "StringIndex": "SYNCED",
+              "Value": "SYNCED",
+              "Name": "已同步"
+            }
+          ],
+          "Mapping": {
+            "MapType": "Element",
+            "TargetMetadataId": "e8e1357f-d238-4743-a813-654f37b056b8",
+            "TargetObjId": "515f249c-2318-47ac-8b45-5cb5c52f82fc",
+            "TargetObjectId": "6b20afc0-7b17-4f09-a1b0-1d2a5e4f3248",
+            "TargetElementId": "515f249c-2318-47ac-8b45-5cb5c52f82fc"
+          }
+        },
+        {
+          "ID": "050fc7b5-380d-4cdd-8c84-2b5c8b66b5dc",
+          "LabelID": "sync_message",
+          "ChildAssociations": [],
+          "Code": "sync_message",
+          "Name": "同步消息",
+          "MDataType": "Text",
+          "EnableRtrim": true,
+          "Mapping": {
+            "MapType": "Element",
+            "TargetMetadataId": "e8e1357f-d238-4743-a813-654f37b056b8",
+            "TargetObjId": "64ade85f-5a45-4d7e-9053-e6cc824400c3",
+            "TargetObjectId": "6b20afc0-7b17-4f09-a1b0-1d2a5e4f3248",
+            "TargetElementId": "64ade85f-5a45-4d7e-9053-e6cc824400c3"
+          }
+        },
+        {
+          "ID": "e3a76d57-3f18-4064-bad0-602efc20b0e2",
+          "LabelID": "person_name",
+          "ChildAssociations": [],
+          "Code": "person_name",
+          "Name": "用户名",
+          "MDataType": "String",
+          "Length": 50,
+          "EnableRtrim": true,
+          "Mapping": {
+            "MapType": "Element",
+            "TargetMetadataId": "e8e1357f-d238-4743-a813-654f37b056b8",
+            "TargetObjId": "37af10d8-b26f-4eda-b214-2693509cceb3",
+            "TargetObjectId": "6b20afc0-7b17-4f09-a1b0-1d2a5e4f3248",
+            "TargetElementId": "37af10d8-b26f-4eda-b214-2693509cceb3"
+          }
+        },
+        {
+          "ID": "a428f9cc-aceb-4b3d-8394-91c1f873e4f7",
+          "LabelID": "requ_comp_code",
+          "ChildAssociations": [],
+          "Code": "requ_comp_code",
+          "Name": "采购方账号的所属公司",
+          "MDataType": "Integer",
+          "EnableRtrim": true,
+          "Mapping": {
+            "MapType": "Element",
+            "TargetMetadataId": "e8e1357f-d238-4743-a813-654f37b056b8",
+            "TargetObjId": "efe94167-fadd-4793-9af8-2048e2249263",
+            "TargetObjectId": "6b20afc0-7b17-4f09-a1b0-1d2a5e4f3248",
+            "TargetElementId": "efe94167-fadd-4793-9af8-2048e2249263"
+          }
+        },
+        {
+          "ID": "9f9ac579-25e7-4c55-a965-a018d2f761d1",
+          "LabelID": "business_id",
+          "ChildAssociations": [],
+          "Code": "business_id",
+          "Name": "成员单位项目ID",
+          "MDataType": "String",
+          "Length": 100,
+          "EnableRtrim": true,
+          "Mapping": {
+            "MapType": "Element",
+            "TargetMetadataId": "e8e1357f-d238-4743-a813-654f37b056b8",
+            "TargetObjId": "bb4d2f4a-ad7a-46b6-b97d-904dba0b1aef",
+            "TargetObjectId": "6b20afc0-7b17-4f09-a1b0-1d2a5e4f3248",
+            "TargetElementId": "bb4d2f4a-ad7a-46b6-b97d-904dba0b1aef"
+          }
+        },
+        {
+          "ID": "ee241c8a-31e4-4daa-bd14-9d9c81fe3fc9",
+          "LabelID": "create_id",
+          "ChildAssociations": [],
+          "Code": "create_id",
+          "Name": "创建人",
+          "MDataType": "String",
+          "Length": 50,
+          "EnableRtrim": true,
+          "Mapping": {
+            "MapType": "Element",
+            "TargetMetadataId": "e8e1357f-d238-4743-a813-654f37b056b8",
+            "TargetObjId": "365db5af-4985-4c91-8170-53224b2a43cc",
+            "TargetObjectId": "6b20afc0-7b17-4f09-a1b0-1d2a5e4f3248",
+            "TargetElementId": "365db5af-4985-4c91-8170-53224b2a43cc"
+          }
+        },
+        {
+          "ID": "124e1bee-1b59-436c-b4cc-4a0b1141dc83",
+          "LabelID": "inqu_code",
+          "ChildAssociations": [],
+          "Code": "inqu_code",
+          "Name": "电商平台询价书id",
+          "MDataType": "String",
+          "Length": 50,
+          "EnableRtrim": true,
+          "Mapping": {
+            "MapType": "Element",
+            "TargetMetadataId": "e8e1357f-d238-4743-a813-654f37b056b8",
+            "TargetObjId": "4b83b675-8e27-4684-a30d-28ba3ab0a952",
+            "TargetObjectId": "6b20afc0-7b17-4f09-a1b0-1d2a5e4f3248",
+            "TargetElementId": "4b83b675-8e27-4684-a30d-28ba3ab0a952"
+          }
+        },
+        {
+          "ID": "0aeb8eee-0af3-45ef-b45a-852fb6a9aaa8",
+          "LabelID": "inqu_no",
+          "ChildAssociations": [],
+          "Code": "inqu_no",
+          "Name": "询价书编号",
+          "MDataType": "String",
+          "Length": 100,
+          "EnableRtrim": true,
+          "Mapping": {
+            "MapType": "Element",
+            "TargetMetadataId": "e8e1357f-d238-4743-a813-654f37b056b8",
+            "TargetObjId": "7a13969c-d922-4ac8-97dd-c1a4671edc97",
+            "TargetObjectId": "6b20afc0-7b17-4f09-a1b0-1d2a5e4f3248",
+            "TargetElementId": "7a13969c-d922-4ac8-97dd-c1a4671edc97"
+          }
+        },
+        {
+          "ID": "fb02a5b0-8ccb-4524-ba45-ec429fcdd13e",
+          "LabelID": "inqu_title",
+          "ChildAssociations": [],
+          "Code": "inqu_title",
+          "Name": "询价书标题",
+          "MDataType": "String",
+          "Length": 200,
+          "EnableRtrim": true,
+          "Mapping": {
+            "MapType": "Element",
+            "TargetMetadataId": "e8e1357f-d238-4743-a813-654f37b056b8",
+            "TargetObjId": "fada13dc-aa06-423a-b11c-b8526c15eb52",
+            "TargetObjectId": "6b20afc0-7b17-4f09-a1b0-1d2a5e4f3248",
+            "TargetElementId": "fada13dc-aa06-423a-b11c-b8526c15eb52"
+          }
+        }
+      ],
+      "ContainChildObjects": [
+        {
+          "ID": "6a1486be-4e3c-4afa-b7fa-92f8bfdddcd5",
+          "Code": "HLHTExpertFormationResult",
+          "Name": "组建专家谈判采购专家组",
+          "I18nResourceInfoPrefix": "Inspur.GS.JCPT.CZ.CG0328.CG0328.Front.Vo.ExpertForm_frm.HLHTExpertFormationResult",
+          "ContainElements": [
+            {
+              "ID": "f1e400c0-f75a-497f-ab72-5163ec9cb041",
+              "LabelID": "ID",
+              "ChildAssociations": [],
+              "Code": "ID",
+              "Name": "ID",
+              "MDataType": "String",
+              "Length": 36,
+              "IsRequire": true,
+              "EnableRtrim": true,
+              "Mapping": {
+                "MapType": "Element",
+                "TargetMetadataId": "e8e1357f-d238-4743-a813-654f37b056b8",
+                "TargetObjId": "9ac4e451-a351-4e16-87c4-f61fec99ac03",
+                "TargetObjectId": "202d5fd1-6971-4801-9008-54a969230d95",
+                "TargetElementId": "9ac4e451-a351-4e16-87c4-f61fec99ac03"
+              }
+            },
+            {
+              "ID": "e0b40a57-253a-439d-8054-c8922307b869",
+              "LabelID": "expert_formation_id",
+              "ChildAssociations": [],
+              "Code": "expert_formation_id",
+              "Name": "组建专家谈判采购id",
+              "MDataType": "String",
+              "Length": 36,
+              "EnableRtrim": true,
+              "Mapping": {
+                "MapType": "Element",
+                "TargetMetadataId": "e8e1357f-d238-4743-a813-654f37b056b8",
+                "TargetObjId": "0a1a2160-05d7-4ab3-8656-065539b65130",
+                "TargetObjectId": "202d5fd1-6971-4801-9008-54a969230d95",
+                "TargetElementId": "0a1a2160-05d7-4ab3-8656-065539b65130"
+              }
+            },
+            {
+              "ID": "8270eb37-45fc-493c-a325-40e53916fedc",
+              "LabelID": "expert_mobile",
+              "ChildAssociations": [],
+              "Code": "expert_mobile",
+              "Name": "专家手机",
+              "MDataType": "String",
+              "Length": 50,
+              "EnableRtrim": true,
+              "Mapping": {
+                "MapType": "Element",
+                "TargetMetadataId": "e8e1357f-d238-4743-a813-654f37b056b8",
+                "TargetObjId": "f06ab4fe-513f-4c3d-bbe1-6ee0339f9011",
+                "TargetObjectId": "202d5fd1-6971-4801-9008-54a969230d95",
+                "TargetElementId": "f06ab4fe-513f-4c3d-bbe1-6ee0339f9011"
+              }
+            },
+            {
+              "ID": "2978e4b9-834d-4a12-b6df-39f618fb9505",
+              "LabelID": "expert_name",
+              "ChildAssociations": [],
+              "Code": "expert_name",
+              "Name": "专家姓名",
+              "MDataType": "String",
+              "Length": 100,
+              "EnableRtrim": true,
+              "Mapping": {
+                "MapType": "Element",
+                "TargetMetadataId": "e8e1357f-d238-4743-a813-654f37b056b8",
+                "TargetObjId": "f09c4a01-4648-4d57-8e01-60a75deecdcf",
+                "TargetObjectId": "202d5fd1-6971-4801-9008-54a969230d95",
+                "TargetElementId": "f09c4a01-4648-4d57-8e01-60a75deecdcf"
+              }
+            },
+            {
+              "ID": "f107a6a1-3d6a-42c1-82df-b3c06644cd01",
+              "LabelID": "expert_sex",
+              "ChildAssociations": [],
+              "Code": "expert_sex",
+              "Name": "专家性别",
+              "ObjectType": "Enum",
+              "MDataType": "String",
+              "Length": 36,
+              "EnableRtrim": true,
+              "EnumIndexType": 1,
+              "ContainEnumValues": [
+                {
+                  "I18nResourceInfoPrefix": "Inspur.GS.JCPT.CZ.CG0328.CG0328.Front.Vo.ExpertForm_frm.HLHTExpertFormationResult.expert_sex.男",
+                  "Index": 0,
+                  "IsDefaultEnum": true,
+                  "StringIndex": "男",
+                  "Value": "男",
+                  "Name": "男"
+                },
+                {
+                  "I18nResourceInfoPrefix": "Inspur.GS.JCPT.CZ.CG0328.CG0328.Front.Vo.ExpertForm_frm.HLHTExpertFormationResult.expert_sex.女",
+                  "Index": 1,
+                  "IsDefaultEnum": false,
+                  "StringIndex": "女",
+                  "Value": "女",
+                  "Name": "女"
+                }
+              ],
+              "Mapping": {
+                "MapType": "Element",
+                "TargetMetadataId": "e8e1357f-d238-4743-a813-654f37b056b8",
+                "TargetObjId": "8663f169-8f11-40e1-8f09-b07952c39a43",
+                "TargetObjectId": "202d5fd1-6971-4801-9008-54a969230d95",
+                "TargetElementId": "8663f169-8f11-40e1-8f09-b07952c39a43"
+              }
+            }
+          ],
+          "RefObjectName": "cf669a2b-dc49-4010-9d0a-28a7ede378eb",
+          "ObjectType": 1,
+          "ColumnGenerateID": {
+            "ColumnParameters": [],
+            "ElementID": "f1e400c0-f75a-497f-ab72-5163ec9cb041",
+            "GenerateType": ""
+          },
+          "BelongModelID": "7d0abe5a-320d-4ef5-bc60-19eee45fe22e",
+          "Keys": [
+            {
+              "RefDataModelName": "",
+              "SourceElement": "e0b40a57-253a-439d-8054-c8922307b869",
+              "SourceElementDisplay": "组建专家谈判采购id",
+              "TargetElement": "cd52adf8-5c0e-45b7-b57c-7c3258022723",
+              "TargetElementDisplay": "ID"
+            }
+          ],
+          "ParentObjectID": "9a2e5333-827c-423c-9986-d8aebf9cea4a",
+          "Mapping": {
+            "MapType": "BEObject",
+            "TargetMetadataId": "e8e1357f-d238-4743-a813-654f37b056b8",
+            "TargetObjId": "202d5fd1-6971-4801-9008-54a969230d95"
+          }
+        }
+      ],
+      "RefObjectName": "93657dd3-b169-4a19-9496-7b26730396ee",
+      "ColumnGenerateID": {
+        "ColumnParameters": [],
+        "ElementID": "cd52adf8-5c0e-45b7-b57c-7c3258022723",
+        "GenerateType": ""
+      },
+      "BelongModelID": "7d0abe5a-320d-4ef5-bc60-19eee45fe22e",
+      "Mapping": {
+        "MapType": "BEObject",
+        "TargetMetadataId": "e8e1357f-d238-4743-a813-654f37b056b8",
+        "TargetObjId": "6b20afc0-7b17-4f09-a1b0-1d2a5e4f3248"
+      }
+    },
+    "Variables": {
+      "ID": "0f4bc26d-f8d7-4fdc-a0b3-5bbe97b8bf02",
+      "Code": "ExpertForm_frmVariable",
+      "Name": "组建专家表单_frm变量",
+      "I18nResourceInfoPrefix": ""
+    },
+    "ConvertMsg": false,
+    "Actions": [
+      {
+        "ID": "a94422de-7528-403a-9978-bc98ed3dfcc9",
+        "Code": "UpdateCompCode",
+        "Name": "更新所属公司",
+        "ComponentName": "ExpertForm_frmUpdateCompCodeVOActionController",
+        "Type": "VMAction",
+        "ParameterCollection": [
+          {
+            "ID": "88af9852-49cd-4a84-8cb3-d8ce13857ca6",
+            "ParamCode": "dataId",
+            "ParamName": "主表主键",
+            "ParameterType": "String",
+            "Assembly": "mscorlib.dll",
+            "JavaClassName": "java.lang.String",
+            "ClassName": "System.String",
+            "ParamActualValue": {
+              "Enable": false,
+              "HasValue": false,
+              "Value": "",
+              "ValueType": "Constant"
+            }
+          },
+          {
+            "ID": "c14e4f9f-ccc8-4a0f-97b2-dc7431f61d24",
+            "ParamCode": "userId",
+            "ParamName": "互联互通采购方id",
+            "ParameterType": "String",
+            "Assembly": "mscorlib.dll",
+            "JavaClassName": "java.lang.String",
+            "ClassName": "System.String",
+            "ParamActualValue": {
+              "Enable": false,
+              "HasValue": false,
+              "Value": "",
+              "ValueType": "Constant"
+            }
+          }
+        ],
+        "ReturnValue": {
+          "ID": "d8def24d-50e4-4b24-93a8-b2ea8fe14927",
+          "ParameterType": "Object",
+          "Assembly": "mscorlib.dll",
+          "JavaClassName": "java.lang.Object",
+          "ClassName": "System.Object",
+          "Mode": "OUT",
+          "ParamActualValue": {
+            "Enable": false,
+            "HasValue": false,
+            "Value": "",
+            "ValueType": "Constant"
+          }
+        },
+        "ComponentEntityId": "be410198-c684-4bda-b6c7-7cd7a6237226"
+      }
+    ],
+    "Mapping": {
+      "MapType": "BizEntity",
+      "TargetMetadataId": "e8e1357f-d238-4743-a813-654f37b056b8",
+      "TargetObjId": "e8e1357f-d238-4743-a813-654f37b056b8"
+    },
+    "ValueHelpConfigs": [
+      {
+        "ElementID": "HLHTExpertFormation/inqu_no",
+        "HelperID": "22235117-1759-4a32-adb3-117be86ebfec",
+        "FilterExpression": null,
+        "CustomizationInfo": null,
+        "EnableCustomHelpAuth": false,
+        "HelpExtend": {
+          "BeforeHelp": [
+            {
+              "ID": "c5a5e68d-78f2-4b8d-860c-fef6279465d3",
+              "Code": "inqu_no",
+              "Name": "inqu_no",
+              "ComponentName": "VO帮助前支持过滤筛选构件",
+              "Type": "VMAction",
+              "ParameterCollection": [
+                {
+                  "ID": "2dcd0735-2349-4b72-adca-18b2ae7f0f23",
+                  "ParamCode": "filterCondition",
+                  "ParamName": "filterCondition",
+                  "ParameterType": "String",
+                  "Assembly": "",
+                  "ClassName": "",
+                  "ParamActualValue": {
+                    "Enable": true,
+                    "HasValue": true,
+                    "Value": "[{\"filterField\":\"open_whether\",\"value\":\"1\",\"lbracket\":\"\",\"rbracket\":\"\",\"relation\":1,\"compare\":0,\"expresstype\":0},{\"filterField\":\"create_id\",\"value\":\"{\\\"expr\\\":\\\"DefaultFunction.GetContextParameter(\\\\\\\"CurrentUserId\\\\\\\")\\\",\\\"sexpr\\\":\\\"[]\\\"}\",\"lbracket\":\"\",\"rbracket\":\"\",\"relation\":1,\"compare\":0,\"expresstype\":\"1\"},{\"filterField\":\"source_mode\",\"value\":\"210\",\"lbracket\":\"\",\"rbracket\":\"\",\"relation\":0,\"compare\":0,\"expresstype\":0}]",
+                    "ValueType": "Constant"
+                  }
+                },
+                {
+                  "ID": "7814c0a3-82bd-4b0a-89fa-e501fcd9e12a",
+                  "ParamCode": "orderByCondition",
+                  "ParamName": "orderByCondition",
+                  "ParameterType": "String",
+                  "Assembly": "",
+                  "ClassName": "",
+                  "ParamActualValue": {
+                    "Enable": true,
+                    "HasValue": false,
+                    "Value": "",
+                    "ValueType": "Constant"
+                  }
+                }
+              ],
+              "ReturnValue": {
+                "ID": "",
+                "ParameterType": "String",
+                "Assembly": "",
+                "ClassName": "",
+                "Mode": "OUT",
+                "ParamActualValue": {
+                  "Enable": false,
+                  "HasValue": false,
+                  "Value": "",
+                  "ValueType": "Constant"
+                }
+              },
+              "ComponentEntityId": "07156c90-f6ee-4d1b-ad57-a40e4027c50c",
+              "IsGenerateComponent": false
+            }
+          ]
+        }
+      },
+      {
+        "ElementID": "HLHTExpertFormationResult/expert_name",
+        "HelperID": "93290004-0329-4329-8329-000000000004",
+        "FilterExpression": null,
+        "CustomizationInfo": null,
+        "EnableCustomHelpAuth": false,
+        "HelpExtend": {
+          "BeforeHelp": []
+        }
+      }
+    ],
+    "ExtendProperties": {},
+    "DataExtendInfo": {
+      "DataMappingActions": [],
+      "BeforeQueryActions": [],
+      "QueryActions": [],
+      "AfterQueryActions": [],
+      "BeforeRetrieveActions": [],
+      "RetrieveActions": [],
+      "AfterRetrieveActions": [],
+      "BeforeModifyActions": [],
+      "ModifyActions": [],
+      "AfterModifyActions": [],
+      "ChangesetMappingActions": [],
+      "BeforeCreateActions": [],
+      "CreateActions": [],
+      "AfterCreateActions": [
+        {
+          "ID": "43cbc2a7-877c-4252-8e80-6d84427372a7",
+          "Code": "CreateDataAfterEvent",
+          "Name": "新增数据后事件",
+          "ComponentName": "ExpertForm_frmCreateDataAfterEventVOActionController",
+          "Type": "VMAction",
+          "ReturnValue": {
+            "ID": "",
+            "ParameterType": "Custom",
+            "Assembly": "mscorlib.dll",
+            "JavaClassName": "void",
+            "ClassName": "Void",
+            "Mode": "OUT",
+            "ParamActualValue": {
+              "Enable": false,
+              "HasValue": false,
+              "Value": "",
+              "ValueType": "Constant"
+            },
+            "IsVoidReturnType": true
+          },
+          "ComponentEntityId": "47165489-5626-4771-8f8c-8e72754343d4"
+        }
+      ],
+      "BeforeDeleteActions": [],
+      "DeleteActions": [],
+      "AfterDeleteActions": [],
+      "BeforeSaveActions": [],
+      "DataReversalMappingActions": [],
+      "AfterSaveActions": [],
+      "ChangesetReversalMappingActions": [],
+      "BeforeMultiDeleteActions": [],
+      "MultiDeleteActions": [],
+      "AfterMultiDeleteActions": []
+    }
+  },
+  "ExtendRule": null,
+  "RelativePath": "JCPT/CZ/CG0328/bo-cg0328-front/metadata/components",
+  "ExtendProperty": "",
+  "Extended": false,
+  "PreviousVersion": null,
+  "Version": null,
+  "Properties": null
+}

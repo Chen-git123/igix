@@ -1,0 +1,157 @@
+{
+  "Header": {
+    "Code": "ExpertForm_frm_Controller",
+    "Type": "WebComponent",
+    "NameSpace": "Inspur.GS.JCPT.CZ.CG0328.CG0328.Front",
+    "CertId": null,
+    "Name": "组建专家表单_frm_Controller",
+    "FileName": "ExpertForm_frm_Controller.webcmp",
+    "BizobjectID": "a9cd6d33-840f-9e35-33b5-24053634c877",
+    "Language": null,
+    "Extendable": false,
+    "NameLanguage": {
+      "zh-CHS": "组建专家表单_frm_Controller",
+      "en": "",
+      "zh-CHT": ""
+    },
+    "ID": "b307fd4c-af6a-4dda-973e-70e2f3154e35",
+    "IsTranslating": false
+  },
+  "Refs": [
+    {
+      "DependentMetadata": {
+        "ID": "0e414218-4b4e-4d06-9284-4d5428fff5c6",
+        "CertId": null,
+        "NameSpace": "Inspur.GS.JCPT.CZ.CG0328.CG0328.Front",
+        "Code": "ExpertForm_frm_Controller.webcmp",
+        "Name": "ExpertForm_frm_Controller.webcmp",
+        "Type": "ResourceMetadata",
+        "BizobjectID": "a9cd6d33-840f-9e35-33b5-24053634c877"
+      }
+    }
+  ],
+  "Content": {
+    "name": "组建专家表单_frm_Controller",
+    "application": null,
+    "serviceUnit": null,
+    "version": null,
+    "refStructures": [],
+    "resource": {
+      "sourceFile": "JCPT/CZ/CG0328/bo-cg0328-front/metadata/components/ExpertForm_frm_Controller.ts",
+      "className": "ExpertFormFrmControllerService",
+      "kind": "TypeScriptClass"
+    },
+    "Code": "ExpertForm_frm_Controller",
+    "Id": "b307fd4c-af6a-4dda-973e-70e2f3154e35",
+    "Description": null,
+    "Operations": [
+      {
+        "dict": null,
+        "uri": null,
+        "returnType": null,
+        "kind": "DefaultOperation",
+        "extensionKeys": null,
+        "Code": "personnameLookupPicked",
+        "Name": "用户名帮助后事件",
+        "Description": "",
+        "Id": "9ddc89ff-4cae-4d90-962f-4ec81bd39d8e",
+        "Parameters": [
+          {
+            "dict": null,
+            "required": null,
+            "defaultValue": null,
+            "constraint": null,
+            "kind": "DefaultParameter",
+            "controlType": null,
+            "customControlSource": null,
+            "helpInfo": null,
+            "paramConstraint": null,
+            "enumCollection": [],
+            "extensionKeys": null,
+            "Code": "returnValue",
+            "Name": "returnValue",
+            "Description": "",
+            "ParameterType": "any",
+            "Id": "e0d403c5-62e1-48bb-b321-a33db29f81a8",
+            "IsRetVal": true
+          }
+        ]
+      },
+      {
+        "dict": null,
+        "uri": null,
+        "returnType": null,
+        "kind": "DefaultOperation",
+        "extensionKeys": null,
+        "Code": "expertmobileFieldValueChanged",
+        "Name": "专家手机绑定字段值变化后事件",
+        "Description": "",
+        "Id": "311eecf7-2a07-49b1-b176-1513c35ff5eb",
+        "Parameters": [
+          {
+            "dict": null,
+            "required": null,
+            "defaultValue": null,
+            "constraint": null,
+            "kind": "DefaultParameter",
+            "controlType": null,
+            "customControlSource": null,
+            "helpInfo": null,
+            "paramConstraint": null,
+            "enumCollection": [],
+            "extensionKeys": null,
+            "Code": "returnValue",
+            "Name": "returnValue",
+            "Description": "",
+            "ParameterType": "any",
+            "Id": "24dac0ac-81ce-4de6-ad85-3ad19a84fb46",
+            "IsRetVal": true
+          }
+        ]
+      },
+      {
+        "dict": null,
+        "uri": null,
+        "returnType": null,
+        "kind": "DefaultOperation",
+        "extensionKeys": null,
+        "Code": "expertCatalogLookupPicked",
+        "Name": "专家多选帮助后事件",
+        "Description": "",
+        "Id": "93280003-0328-4328-8328-000000000003",
+        "Parameters": [
+          {
+            "dict": null,
+            "required": null,
+            "defaultValue": null,
+            "constraint": null,
+            "kind": "DefaultParameter",
+            "controlType": null,
+            "customControlSource": null,
+            "helpInfo": null,
+            "paramConstraint": null,
+            "enumCollection": [],
+            "extensionKeys": null,
+            "Code": "returnValue",
+            "Name": "returnValue",
+            "Description": "",
+            "ParameterType": "any",
+            "Id": "bb6e0c0c-1f00-416a-a603-2205b7a3c49e",
+            "IsRetVal": true
+          }
+        ]
+      }
+    ],
+    "IsCommon": false,
+    "ClassName": "ExpertFormFrmControllerService",
+    "FormCode": "ExpertForm",
+    "Source": "JCPT/CZ/CG0328/bo-cg0328-front/metadata/components/ExpertForm_frm_Controller.ts"
+  },
+  "ExtendRule": null,
+  "RelativePath": "JCPT/CZ/CG0328/bo-cg0328-front/metadata/components",
+  "ExtendProperty": "{\"IsCommon\":false,\"FormCode\":\"ExpertForm\",\"sourceCode\":\"import { Injectable } from '@angular/core';\\nimport { StateMachineService } from \\\"@farris/command-services\\\";\\n\\nimport { FrameContext, Repository, AppContext, BindingData, BindingList } from '@farris/devkit';\\nimport { BefRepository, ResponseInfo } from '@farris/bef';\\nimport { BeActionService, FormMessageService, FormNotifyService, CommandService, FormLoadingService, NavigationService } from '@farris/command-services';\\nimport { tap, map, switchMap } from 'rxjs/operators';\\nimport { EMPTY, of } from 'rxjs';\\n\\n@Injectable()\\nexport class ExpertFormFrmControllerService {\\n  constructor(\\n    private appContext: AppContext,\\n    private bindingData: BindingData,\\n    private frameContext: FrameContext,\\n    private beActionService: BeActionService,\\n    private navigationService: NavigationService,\\n    private messageService: FormMessageService,\\n    private stateMachineService: StateMachineService,\\n    private formNotifyService: FormNotifyService,\\n    private commandService: CommandService,\\n    private loadingService: FormLoadingService\\n  ) { }\\n\\n  /**\\n   * 用户名帮助后事件\\n   * @remarks \\n   * @returns \\n   */\\n  personnameLookupPicked(): any {\\n    let currentHelp = this['context'].eventParam;\\n    console.log(currentHelp);\\n    const bindingData = this.frameContext.bindingData;\\n    const id = bindingData.getValue(['id']);\\n    const userId = currentHelp.id;\\n    const repository = this.frameContext.repository as BefRepository<any>;\\n    const requestInfo = repository.restService.buildRequestInfo();\\n    const actionUri = 'updatecompcode';\\n    const body = {\\n      dataId: id,\\n      userId: userId,\\n      requestInfo: requestInfo\\n    }\\n    const action$ = this.beActionService.invokeAction(actionUri, 'PUT', null, null, body);\\n    return action$.pipe(\\n      tap((responseInfo: ResponseInfo) => {\\n        this.formNotifyService.success(\\\"成功!\\\");\\n      })\\n    )\\n  }\\n\\n  /**\\n   * 专家手机绑定字段值变化后事件\\n   * @remarks \\n   * @returns \\n   */\\n  expertmobileFieldValueChanged(): any {\\n    const bindingData = this.frameContext.bindingData;\\n    const expert_mobile = bindingData.getValue(['hlhtExpertFormationResults', 'expert_mobile']);\\n\\n    console.log(\\\"expert_mobile:\\\", expert_mobile);\\n\\n    if (expert_mobile) {\\n      const mobileReg = /^1[3-9]\\\\d{9}$/;\\n      if (!mobileReg.test(expert_mobile)) {\\n        bindingData.setValue(['hlhtExpertFormationResults', 'expert_mobile'], '', true, true);\\n        this.formNotifyService.warning('手机号格式有误');\\n        return;\\n      }\\n    }\\n  }\\n}\\n\"}",
+  "Extended": false,
+  "PreviousVersion": null,
+  "Version": null,
+  "Properties": null
+}

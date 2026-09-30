@@ -1,0 +1,201 @@
+{
+  "Header": {
+    "Code": "ExpertCatalogList_frm",
+    "Type": "StateMachine",
+    "NameSpace": "Inspur.GS.JCPT.CZ.ZJ.ZJ.Front",
+    "CertId": null,
+    "Name": "专家信息列表",
+    "FileName": "ExpertCatalogList_frm.sm",
+    "BizobjectID": "5b0b33c8-8489-49c6-9b5d-a8d10e4d0329",
+    "Language": null,
+    "Extendable": false,
+    "NameLanguage": {
+      "zh-CHS": "专家信息列表",
+      "en": "",
+      "zh-CHT": ""
+    },
+    "ID": "c7238732-f15a-4685-bf88-2e4f7d5a6691",
+    "IsTranslating": false
+  },
+  "Refs": [],
+  "Content": {
+    "code": null,
+    "name": null,
+    "renderState": {
+      "canView": {
+        "condition": [
+          {
+            "lBracket": "",
+            "source": "state",
+            "compare": "===",
+            "target": "'init'",
+            "relation": "",
+            "rBracket": ""
+          }
+        ],
+        "name": "查看",
+        "description": "是否允许查看"
+      },
+      "canRemove": {
+        "condition": [
+          {
+            "lBracket": "",
+            "source": "state",
+            "compare": "===",
+            "target": "'init'",
+            "relation": "",
+            "rBracket": ""
+          }
+        ],
+        "name": "删除",
+        "description": ""
+      },
+      "canEdit": {
+        "condition": [
+          {
+            "lBracket": "(",
+            "source": "getData('{DATA~/#{root-component}/sync_status}')",
+            "compare": "===",
+            "target": "'DRAFTED'",
+            "relation": "or",
+            "rBracket": ""
+          },
+          {
+            "lBracket": "",
+            "source": "getData('{DATA~/#{root-component}/sync_status}')",
+            "compare": "===",
+            "target": "'SYNCED'",
+            "relation": "and",
+            "rBracket": ")"
+          },
+          {
+            "lBracket": "",
+            "source": "getData('{DATA~/#{root-component}/sync_message}')",
+            "compare": "!==",
+            "target": "'OK'",
+            "relation": "",
+            "rBracket": ""
+          }
+        ],
+        "name": "编辑",
+        "description": ""
+      },
+      "canAdd": {
+        "condition": [
+          {
+            "lBracket": "",
+            "source": "state",
+            "compare": "===",
+            "target": "'init'",
+            "relation": "",
+            "rBracket": ""
+          }
+        ],
+        "name": "新增",
+        "description": ""
+      },
+      "canDelete": {
+        "condition": [
+          {
+            "lBracket": "",
+            "source": "getData('{DATA~/#{root-component}/sync_status}')",
+            "compare": "===",
+            "target": "'DRAFTED'",
+            "relation": "",
+            "rBracket": ""
+          }
+        ],
+        "name": "可以删除",
+        "description": "可以删除"
+      },
+      "canLook": {
+        "condition": [
+          {
+            "lBracket": "",
+            "source": "getData('{DATA~/#{root-component}/id}')",
+            "compare": "!==",
+            "target": "undefined",
+            "relation": "",
+            "rBracket": ""
+          }
+        ],
+        "name": "可以查看",
+        "description": "可以查看"
+      },
+      "canSync": {
+        "condition": [
+          {
+            "lBracket": "(",
+            "source": "getData('{DATA~/#{root-component}/sync_status}')",
+            "compare": "===",
+            "target": "'DRAFTED'",
+            "relation": "or",
+            "rBracket": ""
+          },
+          {
+            "lBracket": "",
+            "source": "getData('{DATA~/#{root-component}/sync_status}')",
+            "compare": "!==",
+            "target": "'SYNCING'",
+            "relation": "and",
+            "rBracket": ")"
+          },
+          {
+            "lBracket": "",
+            "source": "getData('{DATA~/#{root-component}/sync_message}')",
+            "compare": "!==",
+            "target": "'OK'",
+            "relation": "and",
+            "rBracket": ""
+          },
+          {
+            "lBracket": "",
+            "source": "getData('{DATA~/#{root-component}/id}')",
+            "compare": "!==",
+            "target": "undefined",
+            "relation": "",
+            "rBracket": ""
+          }
+        ],
+        "name": "可以同步",
+        "description": "可以同步数据"
+      }
+    },
+    "state": [
+      {
+        "state": "init",
+        "name": "初始",
+        "description": "处于初始状态"
+      },
+      {
+        "state": "DRAFTED",
+        "name": "草稿",
+        "description": "处于草稿状态"
+      },
+      {
+        "state": "SYNCING",
+        "name": "同步中",
+        "description": "处于同步中状态"
+      },
+      {
+        "state": "SYNCED",
+        "name": "已同步",
+        "description": "处于已同步状态"
+      },
+      {
+        "state": "OK",
+        "name": "同步消息成功",
+        "description": "同步消息为成功"
+      }
+    ],
+    "initialState": "init",
+    "action": {}
+  },
+  "ExtendRule": null,
+  "RelativePath": "JCPT/CZ/ZJ/bo-zj-front/metadata/components",
+  "ExtendProperty": "",
+  "Extended": false,
+  "PreviousVersion": null,
+  "Version": null,
+  "Properties": null
+}

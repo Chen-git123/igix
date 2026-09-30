@@ -1,0 +1,72 @@
+{
+  "Header": {
+    "Code": "predefinePageflow",
+    "Type": "PageFlowMetadata",
+    "NameSpace": "Inspur.GS.JCPT.CZ.ZJ.ZJ.Front",
+    "CertId": null,
+    "Name": "predefinePageflow",
+    "FileName": "predefinePageflow.pf",
+    "BizobjectID": "5b0b33c8-8489-49c6-9b5d-a8d10e4d0329",
+    "Language": null,
+    "Extendable": false,
+    "NameLanguage": null,
+    "ID": "93290001-0329-4329-8329-000000000001",
+    "IsTranslating": false
+  },
+  "Refs": [],
+  "Content": {
+    "code": null,
+    "name": null,
+    "id": "93290001-0329-4329-8329-000000000001",
+    "project": {
+      "name": "bo-zj-front"
+    },
+    "pages": [
+      {
+        "id": "0a5ca97c-681e-400e-8f1d-8e99552f8c99",
+        "code": "ExpertCatalogList",
+        "name": "专家信息列表",
+        "fileName": "ExpertCatalogList.frm",
+        "relativePath": "JCPT/CZ/ZJ/bo-zj-front/metadata/components",
+        "formUri": null,
+        "routeUri": "ExpertCatalogList",
+        "routeParams": null
+      },
+      {
+        "id": "fbabfb66-f291-4935-8f10-3afc6a9d5f95",
+        "code": "ExpertCatalogForm",
+        "name": "专家信息表单",
+        "fileName": "ExpertCatalogForm.frm",
+        "relativePath": "JCPT/CZ/ZJ/bo-zj-front/metadata/components",
+        "formUri": "fbabfb66-f291-4935-8f10-3afc6a9d5f95",
+        "routeUri": "ExpertCatalogForm",
+        "routeParams": null
+      }
+    ],
+    "entry": "ExpertCatalogList",
+    "routes": null,
+    "appCode": "ExpertCatalogList",
+    "appName": "专家信息列表",
+    "publishes": [
+      {
+        "id": "d0a1e928-fab0-490c-bae5-b15f7c7d8c57",
+        "entry": "0a5ca97c-681e-400e-8f1d-8e99552f8c99",
+        "type": null,
+        "processCategory": null
+      },
+      {
+        "id": "92f208cb-ec79-474e-9c59-bb5e3cbec1d0",
+        "entry": "0a5ca97c-681e-400e-8f1d-8e99552f8c99",
+        "type": null,
+        "processCategory": null
+      }
+    ]
+  },
+  "ExtendRule": null,
+  "RelativePath": "JCPT/CZ/CG0328/bo-cg0328-front/metadata/route",
+  "ExtendProperty": "",
+  "Extended": false,
+  "PreviousVersion": null,
+  "Version": null,
+  "Properties": null
+}
